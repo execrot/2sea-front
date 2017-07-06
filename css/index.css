@@ -1,0 +1,15 @@
+main > .swiper-container {
+    height: 70vh;
+}
+
+main > .swiper-container .swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    main > .swiper-container {
+        height: 100vh;
+    }
+}

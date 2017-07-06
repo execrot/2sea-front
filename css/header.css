@@ -1,0 +1,263 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+
+header .logo {
+    background-repeat: no-repeat;
+    background-image: url(/img/logo-gray.png);
+    width: 120px;
+    background-position-y: center;
+    background-position-x: 0;
+    height: 95px;
+    background-size: contain;
+    top: 2px;
+    left: 5px;
+    position: absolute;
+    transition: all ease 0.2s;
+}
+
+header .menu-button {
+    display: none;
+}
+
+header .menu {
+    position: absolute;
+    right: 63px;
+    height: 100px;
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+header .menu li {
+    display: inline-block;
+    height: 100%;
+}
+
+header .menu li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 95px;
+    height: 100%;
+    display: block;
+    color: #353535;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header .menu li a:hover,
+header .menu li a:active,
+header .menu li a:focus,
+header .menu li a.active {
+    color: #ffc71b;
+    border-bottom-color: #ffc71b;
+}
+
+header .top-bar {
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all ease 0.2s;
+
+    -webkit-box-shadow: 0px -4px 20px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -4px 20px 0px rgba(0,0,0,1);
+    box-shadow: 0px -4px 20px 0px rgba(0,0,0,1);
+}
+
+/*-------------------------------------*/
+
+header.middle .top-bar {
+    height: 60px;
+    background-color: rgba(53, 53, 53, 0.5);
+}
+
+header.middle .top-bar .logo {
+    width: 60px;
+    height: 50px;
+    background-image: url(/img/logo.png);
+    top: 5px;
+    left: 8px;
+}
+
+header.middle .menu {
+    height: 60px;
+}
+
+header.middle .menu a {
+    line-height: 60px;
+    color: #ececec;
+}
+
+/*-------------------------------------*/
+
+
+
+
+header .langs {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    background: rgba(53, 53, 53, 0.34);
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: table;
+}
+
+header .langs li {
+    display: table-row;
+}
+
+header .langs li .cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .langs li .cell a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
+    padding: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+header .langs li .cell a:hover,
+header .langs li .cell a:active,
+header .langs li .cell a:focus,
+header .langs li .cell a.active {
+    background-color: #ffc71b;
+    color: #353535;
+}
+
+
+/* -------------------------------------------- */
+
+
+@media (max-width: 1000px) {
+
+    header .top-bar {
+        height: 60px !important;
+        background-color: rgba(53, 53, 53, 0.5) !important;
+    }
+
+    header .top-bar .logo {
+        width: 60px;
+        height: 50px;
+        background-image: url(/img/logo.png);
+        top: 5px;
+        left: 8px;
+        z-index: 2;
+    }
+
+    header .menu-button {
+        height: 60px;
+        z-index: 2;
+        display: block;
+        width: 60px;
+        position: absolute;
+        right: 0;
+        color: #ffc71b;
+        text-decoration: none;
+        font-size: 36px;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+    }
+
+    header .menu {
+        height: 100vh !important;
+        width: 100%;
+        right: -100vw;
+        background-color: rgba(53, 53, 53, 0.8);
+        z-index: 1;
+        padding-top: 60px;
+        transition: all ease 0.5s;
+    }
+
+    header .menu li {
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: 70px;
+    }
+
+    header .menu li:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    header .menu li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        line-height: 68px !important;
+        color: #ececec !important;
+    }
+
+    header .langs {
+        right: 60px;
+        width: 111px;
+        z-index: 2;
+        padding-left: 10px;
+    }
+
+    header .langs li {
+        display: table-cell;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 60px;
+    }
+
+    header .langs li .cell {
+        height: 60px;
+        width: 100%;
+    }
+    header .langs li .cell a {
+        padding: 10px;
+    }
+
+
+    header .menu li a:hover,
+    header .menu li a:active,
+    header .menu li a:focus,
+    header .menu li a.active {
+        border-bottom-color: #ffc71b !important;
+        background-color: #ffc71b !important;
+        color: #353535 !important;
+    }
+
+    .menu-opened header .menu {
+        right: -0vw;
+    }
+
+    body.menu-opened {
+        overflow: hidden;
+    }
+    body .fa-close {
+        display: none;
+    }
+
+    body.menu-opened .fa-bars {
+        display: none;
+    }
+
+    body.menu-opened .fa-close {
+        display: inline-block;
+    }
+}

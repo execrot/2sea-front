@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,700|Ubuntu:200,400,700');
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}

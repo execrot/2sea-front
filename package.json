@@ -1,0 +1,16 @@
+{
+  "name": "2sea",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-uglify": "~0.9.1"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "swiper": "^3.4.2",
+    "wowjs": "^1.1.3"
+  }
+}
