@@ -1,8 +1,6 @@
-FrontStar.get('module').registerModule('index', function () {
+FrontStar.get('module').registerModule('filter', function () {
 
     return {
-
-        layout: true,
 
         init: function () {
 
@@ -10,11 +8,9 @@ FrontStar.get('module').registerModule('index', function () {
 
             var view = FrontStar.get('view');
 
-            view.render('index/view/index', {}, (function(tpl){
+            view.render('index/view/filter', {}, (function(tpl){
 
                 this.element.html(tpl);
-
-                FrontStar.get('module').load('filter', {}, $('[data-module=filter]'));
 
             }).bind(this));
         },

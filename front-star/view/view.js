@@ -30,6 +30,12 @@ FrontStar.registerComponent('view', {
 
     init: function () {
 
+        if (window.___FrontStarViewTemplates) {
+            this.__templates = window.___FrontStarViewTemplates;
+            this.initCompleted('view');
+            return;
+        }
+
         var templates = document.querySelectorAll('[data-fs-view][data-view][data-src]');
 
         if (templates.length == 0 || Object.keys(this.__templates).length == templates.length) {
@@ -96,7 +102,7 @@ FrontStar.registerComponent('view', {
             if (data.hasOwnProperty(attr)) copy[attr] = data[attr];
         }
 
-        copy.plugins = this.plugins;
+        copy.plugins = this.__plugins;
 
         var renderedTemplate = null;
 

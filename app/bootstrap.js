@@ -6,16 +6,14 @@ FrontStar.init({
     router: {
         captureLinks: true,
         default: 'index',
+        layout: 'layout',
         error: '404',
         routes: [{
             route: '',
             module: 'index'
         }, {
-            route: 'some-page/:userId/videos/:hitman',
-            module: 'video',
-            defaults: {
-                param: 'value'
-            }
+            route: 'locality/:locality',
+            module: 'index'
         }, {
             route: '404',
             module: '404'

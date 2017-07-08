@@ -5,7 +5,17 @@ FrontStar.registerComponent('router', {
 
     start: function () {
 
-        this.interval = setInterval(this.scheduler.bind(this));
+        if (FrontStar.getConfig().router.layout) {
+
+            FrontStar.get('module').load(
+                FrontStar.getConfig().router.layout, null, null, (function(){
+                    this.interval = setInterval(this.scheduler.bind(this));
+                }).bind(this)
+            );
+        }
+        else {
+            this.interval = setInterval(this.scheduler.bind(this));
+        }
 
         if (FrontStar.getConfig().router.captureLinks) {
 

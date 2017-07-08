@@ -60,10 +60,21 @@ FrontStar.registerComponent('module', {
 
         if (!element) {
 
-            var dom = FrontStar.get('dom');
+            var moduleDiv = '<div data-module="' + name + '"></div>';
+            var rootDiv = 'body';
 
-            dom('body').append('<div data-module="' + name + '"></div>');
-            element = dom('[data-module=' + name + ']');
+            if (FrontStar.getConfig().router.layout && name != FrontStar.getConfig().router.layout) {
+                rootDiv = '#' + FrontStar.getConfig().router.layout;
+            }
+
+            if (this.__loadedModules[name].layout) {
+                $(rootDiv).html(moduleDiv);
+            }
+            else {
+                $(rootDiv).append(moduleDiv);
+            }
+
+            element = FrontStar.get('dom')('[data-module=' + name + ']');
         }
 
         this.__loadedModules[name].element = element;

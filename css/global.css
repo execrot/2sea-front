@@ -1,9 +1,82 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,700|Ubuntu:200,400,700');
-
 .font-oswald {
     font-family: 'Oswald', sans-serif;
 }
 
 .font-ubuntu {
     font-family: 'Ubuntu', sans-serif;
+}
+
+.font-bold {
+    font-weight: bold !important;
+}
+
+.font-regular {
+    font-weight: 400 !important;
+}
+
+.font-stick {
+    font-weight: 200 !important;
+}
+
+.font-size-2x {
+    font-size: 2em !important;
+}
+
+.font-size-3x {
+    font-size: 3em !important;
+}
+
+.font-size-4x {
+    font-size: 4em !important;
+}
+
+.font-size-5x {
+    font-size: 5em !important;
+}
+
+
+.color-gray {
+    color: #353535 !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-yellow {
+    color: #ffc71b !important;
+}
+
+.butt {
+    height: auto;
+    background-color: #fec61b;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 3px;
+    font-family: Ubuntu, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #353535;
+    transition: all ease 0.3s;
+    margin: 5px;
+}
+
+.butt:hover,
+.butt:active,
+.butt:focus,
+.butt.active {
+    text-decoration: none;
+    color: #ffc71c;
+    background-color: #353535;
+}
+
+.tag {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
 }

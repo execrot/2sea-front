@@ -1,0 +1,35 @@
+<div class="splash">
+
+    <div class="container">
+
+        <div class="jumbotron animated fadeInUp">
+
+            <%= plugins.partial('index/view/filter-header') %>
+
+            <div class="jumbotron filter">
+                <form>
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-4">
+                            <%= plugins.partial('index/view/filter-condition') %>
+                        </div>
+
+                        <div class="col-xs-12 col-md-4">
+                            <%= plugins.partial('index/view/filter-apartment') %>
+                        </div>
+
+                        <div class="col-xs-12 col-md-4">
+                            <%= plugins.partial('index/view/filter-communal') %>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <%= plugins.partial('index/view/filter-tag') %>
+
+        </div>
+
+    </div>
+
+
+</div>

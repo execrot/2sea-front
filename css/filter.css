@@ -1,0 +1,100 @@
+.splash {
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(/img/slider0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 0.5s;
+
+    padding-top: 140px;
+
+    /*-webkit-animation: splash-slider 10s infinite;*/
+    /*-moz-animation: splash-slider 10s infinite;*/
+    /*-o-animation: splash-slider 10s infinite;*/
+    /*animation: splash-slider 10s infinite;*/
+}
+
+.splash .container > .jumbotron {
+
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+
+    background-color: rgba(53, 53, 53, 0.7);
+    padding-top: 20px;
+}
+
+.splash .filter {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.splash .filter.jumbotron {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+}
+
+.filter .twice-inputs input {
+    height: auto;
+    width: 48%;
+    display: inline-block;
+}
+
+.filter .twice-inputs input:first-child {
+    float: left;
+}
+
+.filter .twice-inputs input:last-child {
+    float: right;
+}
+
+@media (max-width: 1000px) {
+    .splash {
+        padding-top: 75px;
+    }
+
+    .splash .tags .tag {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .splash .filter.jumbotron {
+        margin-right: inherit;
+        margin-left: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+    }
+}
+
+@media (max-width: 400px) {
+    .splash .filter label {
+        font-size: 0.8em;
+    }
+}
+
+@keyframes splash-slider {
+    0% {
+        background-image: url(/img/slider0.jpg);
+    }
+
+    20% {
+        background-image: url(/img/slider1.jpg);
+    }
+
+    40% {
+        background-image: url(/img/slider2.jpg);
+    }
+
+    60% {
+        background-image: url(/img/slider3.jpg);
+    }
+
+    80% {
+        background-image: url(/img/slider4.jpg);
+    }
+}

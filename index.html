@@ -2,30 +2,37 @@
 <html>
 <head>
 
+    <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
     <base href="/" />
 
+    <title>2Sea - сервис поиска жилья в курортной Одессе!</title>
+
+    <link rel="icon" href="/img/logo-gray.png" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:200,400,700|Ubuntu:200,400,700" />
+    <!-- Grunt:CSS -->
+    <!-- Third party css -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/filter.css" />
+
+    <!-- Grunt:CSS -->
 </head>
 <body>
-
-
-<!-- External libs -->
-<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.css" />
-<link rel="stylesheet" type="text/css" href="node_modules/swiper/dist/css/swiper.css" />
-<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css" />
-
-<link rel="stylesheet" type="text/css" href="css/header.css" />
-<link rel="stylesheet" type="text/css" href="css/global.css" />
-<link rel="stylesheet" type="text/css" href="css/index.css" />
-
+<!-- Grunt:JS -->
+<!-- Third party js -->
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script src="node_modules/wowjs/dist/wow.js"></script>
-<script src="node_modules/swiper/dist/js/swiper.js"></script>
 
 
-<!-- Font-star core -->
+<!-- Front-star core -->
 <script src="front-star/core.js"></script>
 <script src="front-star/view/view.js"></script>
 <script src="front-star/view/plugin/date-format.js"></script>
@@ -38,21 +45,65 @@
 <script src="front-star/router.js"></script>
 
 <!-- App services -->
-<script src="app/services/api.js"></script>
-<script src="app/services/data.js"></script>
-<script src="app/services/wow.js"></script>
+<script src="app/services/translate.js"></script>
 
 <!-- App modules -->
+<script src="app/modules/layout/layout.js"></script>
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="layout/view/header"
+        data-src="app/modules/layout/view/header.html"></script>
+
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="layout/view/footer"
+        data-src="app/modules/layout/view/footer.html"></script>
+
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="layout/view/layout"
+        data-src="app/modules/layout/view/layout.html"></script>
+
+
 <script src="app/modules/index/index.js"></script>
-<script type="application/xhtml+xml" data-fs-view="true" data-view="index/view/index" data-src="app/modules/index/view/index.html"></script>
+<script src="app/modules/index/filter.js"></script>
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/index"
+        data-src="app/modules/index/view/index.html"></script>
 
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/filter"
+        data-src="app/modules/index/view/filter.html"></script>
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/filter-header"
+        data-src="app/modules/index/view/filter-header.html"></script>
 
-<script src="app/modules/video/index.js"></script>
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/filter-condition"
+        data-src="app/modules/index/view/filter-condition.html"></script>
+
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/filter-apartment"
+        data-src="app/modules/index/view/filter-apartment.html"></script>
+
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/filter-communal"
+        data-src="app/modules/index/view/filter-communal.html"></script>
+
+<script type="application/xhtml+xml"
+        data-fs-view="true"
+        data-view="index/view/filter-tag"
+        data-src="app/modules/index/view/filter-tag.html"></script>
 
 <!-- App launcher -->
 <script src="app/bootstrap.js"></script>
 
-
-
+<!-- Grunt:JS -->
 </body>
 </html>

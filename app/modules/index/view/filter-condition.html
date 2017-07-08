@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h3 class="font-oswald font-regular">
+            <%= plugins.translate('Условия:') %>
+            <hr>
+        </h3>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-xs-12">
+        <label class="font-ubuntu">
+            <span><%= plugins.translate('Где:') %></span>
+        </label>
+    </div>
+
+    <div class="col-xs-12">
+        <select class="form-control input-sm">
+            <option data-translation="true" data-origin-phrase="Все локации"><%= plugins.translate('Все локации', true) %></option>
+            <option data-translation="true" data-origin-phrase="Одесса"><%= plugins.translate('Одесса', true) %></option>
+            <option data-translation="true" data-origin-phrase="Черноморск"><%= plugins.translate('Черноморск', true) %></option>
+            <option data-translation="true" data-origin-phrase="Каролино-Бугаз"><%= plugins.translate('Каролино-Бугаз', true) %></option>
+            <option data-translation="true" data-origin-phrase="Грибовка"><%= plugins.translate('Грибовка', true) %></option>
+            <option data-translation="true" data-origin-phrase="Затока"><%= plugins.translate('Затока', true) %></option>
+        </select>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-xs-12">
+        <label class="font-ubuntu">
+            <span><%= plugins.translate('Тип жилья:') %></span>
+        </label>
+    </div>
+
+    <div class="col-xs-12">
+        <select class="form-control input-sm">
+            <option data-translation="true" data-origin-phrase="Все локации"><%= plugins.translate('Все типы', true) %></option>
+            <option data-translation="true" data-origin-phrase="Одесса"><%= plugins.translate('Отель', true) %></option>
+            <option data-translation="true" data-origin-phrase="Черноморск"><%= plugins.translate('База отдыха', true) %></option>
+            <option data-translation="true" data-origin-phrase="Каролино-Бугаз"><%= plugins.translate('Частный дом', true) %></option>
+            <option data-translation="true" data-origin-phrase="Грибовка"><%= plugins.translate('Квартиры', true) %></option>
+            <option data-translation="true" data-origin-phrase="Затока"><%= plugins.translate('Мини-отели', true) %></option>
+        </select>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xs-2">
+        <label class="font-ubuntu">
+            <span><%= plugins.translate('Цена') %></span>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 twice-inputs">
+
+        <input class="form-control input-sm"
+               placeholder="<%= plugins.translate('От', true) %>"
+               data-translation="true"
+               data-origin-phrase="От"
+               data-translation-attr="placeholder" />
+
+        <input class="form-control input-sm"
+               placeholder="<%= plugins.translate('До', true) %>"
+               data-translation="true"
+               data-origin-phrase="До"
+               data-translation-attr="placeholder" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="checkbox">
+            <label class="font-ubuntu font-bold">
+                <input type="checkbox" value="option1" /> <%=plugins.translate('Парковка') %>
+            </label>
+        </div>
+    </div>
+</div>
